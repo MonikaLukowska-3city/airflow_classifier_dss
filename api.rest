@@ -1,0 +1,64 @@
+
+#Generate first model on PART 1 data
+GET http://localhost:5000/initial_train HTTP/1.1
+
+
+###
+
+#Prediction for data part 2 with auto selected champion model
+GET http://localhost:5000/predict?part_id=3 HTTP/1.1
+
+
+
+### 
+
+#Get champion  model to rating
+GET http://localhost:5000/rate_champion HTTP/1.1
+
+
+
+###
+
+#Pass chosed model to rating
+
+GET http://localhost:5000/rate_model?model_id=2 HTTP/1.1
+
+
+###
+
+#Train new model on part 1 + 2
+
+GET http://localhost:5000/train?part_id=2 HTTP/1.1
+
+
+
+
+###
+
+#Prediction for data part 3 with chosed model
+GET http://localhost:5000/predict?part_id=3&model_id=11 HTTP/1.1
+
+
+
+###
+
+#Get info about predicted parts...
+ 
+GET http://localhost:5000/last_processed_part HTTP/1.1
+
+
+
+###
+
+#Evaluate champion and challenger models
+
+GET http://localhost:5000/evaluate_models HTTP/1.1
+
+
+
+###
+
+#Validate part data, histograms etc. 
+# part_id is optional if not set then analyze last predicted part
+
+GET http://localhost:5000/valid_data HTTP/1.1
