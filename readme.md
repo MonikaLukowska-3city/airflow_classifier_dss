@@ -12,7 +12,7 @@
 
 ### General Information
 
-The project is created for the conference [Data Science Summit 2022](https://dssconf.pl/). The project shows the workflow from data loading to validation, prediction execution, and a generalized training scheme. Data from . Subsequent batches of data are generated.
+The project is created for the conference [Data Science Summit 2022](https://dssconf.pl/). The project shows the workflow from data loading to validation, prediction execution, and a generalized training scheme. The data is randomly generated and partitioned for the project.
 
 ---
 
